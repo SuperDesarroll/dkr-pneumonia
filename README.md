@@ -1,79 +1,54 @@
-# Deploying and Hosting a Machine Learning Model with FastAPI and Heroku
+# Basic FastAPI Docker Setup
 
-## Want to learn how to build this?
+Intended to be related to the following fully baked cookiecutter projects:
 
-Check out the [post](https://testdriven.io/blog/fastapi-machine-learning).
+* https://github.com/tiangolo/full-stack-fastapi-postgresql 
+* https://github.com/tiangolo/full-stack-fastapi-couchbase
 
-## Want to use this project?
+These stacks are awesome and huge! Thanks [@tiangolo](https://github.com/tiangolo/) for the great work! :sparkleheart:
 
-### With Docker
+Sometimes you just need a quick setup. This is intended to provide that setup.
 
-1. Build and tag the Docker image:
+Issues and PRs welcome.
 
-    ```sh
-    $ docker build -t fastapi-prophet .
-    ```
+Defaults (details in [Configuration](#configuration) below, please feel free to change these, this is just some values to get going)
 
-1. Spin up the container:
+* Python version: `python3.8`
+* Localhost: http://localhost:8081
+* image name: `my-fastapi-image`
 
-    ```sh
-    $ docker run --name fastapi-ml -e PORT=8008 -p 8008:8008 -d fastapi-prophet:latest
-    ```
 
-1. Train the model:
+## Quickstart
 
-    ```sh
-    $ docker exec -it fastapi-ml python
+Install docker and have the daemon running: https://docs.docker.com/get-docker/
 
-    >>> from model import train, predict, convert
-    >>> train()
-    ```
+    $ docker build -t my-fastapi-image .
 
-1. Test:
+_Don't forget the `.`_
 
-    ```sh
-    $ curl \
-      --header "Content-Type: application/json" \
-      --request POST \
-      --data '{"ticker":"MSFT"}' \
-      http://localhost:8008/predict
-    ```
 
-### Without Docker
+    $ docker compose up -d
 
-1. Create and activate a virtual environment:
+See your FastAPI app running at http://localhost:8081 :tada:
 
-    ```sh
-    $ python3 -m venv venv && source venv/bin/activate
-    ```
 
-1. Install the requirements:
+## Configuration
 
-    ```sh
-    (venv)$ pip install -r requirements.txt
-    ```
+Defaults in this repo. Please change them to suit your needs:
 
-1. Train the model:
+Python version:
 
-    ```sh
-    (venv)$ python
+    Dockerfile#1: FROM python:3.8
 
-    >>> from model import train, predict, convert
-    >>> train()
-    ```
+localhost:PORT -- set to `8081`
 
-1. Run the app:
+_Don't need to change the `80`, that's set in the Dockerfile and is only used "internally" by that image._
 
-    ```sh
-    (venv)$ uvicorn main:app --reload --workers 1 --host 0.0.0.0 --port 8008
-    ```
+    docker-compose.yaml#6: "8081:80"
 
-1. Test:
 
-    ```sh
-    $ curl \
-      --header "Content-Type: application/json" \
-      --request POST \
-      --data '{"ticker":"MSFT"}' \
-      http://localhost:8008/predict
-    ```
+image name `my-fastapi-image`
+
+    $ docker build -t my-fastapi-image .
+
+    docker-compose.yaml#4    image: my-fastapi-image
