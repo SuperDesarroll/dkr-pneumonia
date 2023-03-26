@@ -1,0 +1,61 @@
+# dkr_pneumonia
+Docker python tensorflow pneumonía
+
+# Estudiante: Dewins Murillo García
+Universidad Autónoma de Occidente
+Postgrado Inteligencia Artificial
+Entrega Preliminar:
+Proyectos de Inteligenciar Artificial 
+Aplicando Ingeniería de Software
+
+# main.py
+
+Inicio del la api
+Se debe consumir el método process_image
+cargando el archivo desde el swagger o enviando por parámetro 
+el objetoc archivo.
+
+Retorna:
+label = (Viral, Normal o Bacteria)
+proba = de 1 - 100 porcentaje de probabilidad de predicción
+heatmap = base64 imagen mapa de calor
+
+1. La aplicación inicia con el archivo detectorOOP.py
+
+> El archivo WilhemNet_86.h5 se encuentra en el zip que nos enviaron junto con el enlace del repositorio.
+
+2. Las pruebas unitarias inician con el comando: 
+
+>`python -m unittest discover`
+
+Implementaciones
+
+1. Pueden cargar archivos con extensión dcm y jpeg
+
+> Las imagenes RX se encuentran en la carpeta sample-images
+
+2. Se Aplica Cohesión y acoplamiento en todos los métodos
+
+> Los métodos creados son específicos para sus funciones
+
+3. Se aplica Abstract en las clases RX y Export
+
+> En este patrón de diseño creamos funciones de cargue y exportar respectivos
+
+4. Se implmenta Patrón Strategy para que actué de acuerdo al comportamiento del tipo de archivo y los documentos a exportar
+
+3. Se Implementa Pruebas unitarias de las clases IA y RX
+
+> El archivo test_with_unittest.py contiene las 2 pruebas unitarias
+
+ALGUNAS VISTAS:
+
+
+[![Aplicación](https://raw.githubusercontent.com/SuperDesarroll/detector_neumonia/main/reportes/01.jpeg?token=GHSAT0AAAAAAB5QOPAJSGBY6KGSBQKEBIIQZA42QMA "Aplicación")](https://raw.githubusercontent.com/SuperDesarroll/detector_neumonia/main/reportes/01.jpeg?token=GHSAT0AAAAAAB5QOPAJSGBY6KGSBQKEBIIQZA42QMA "Aplicación")
+
+Pruebas Unitarias:
+
+![Pruebas Unitarias](https://raw.githubusercontent.com/SuperDesarroll/detector_neumonia/main/reportes/02.jpeg?token=GHSAT0AAAAAAB5QOPAJCCRVCJ2N2MWU272AZA42RJA "Pruebas Unitarias")
+
+![Pruebas Unitarias](https://raw.githubusercontent.com/SuperDesarroll/detector_neumonia/main/reportes/03.jpeg?token=GHSAT0AAAAAAB5QOPAIWUB6BW6AAUYHIXM2ZA42RYQ "Pruebas Unitarias")
+
