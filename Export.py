@@ -1,15 +1,8 @@
 
-from tkinter import *
-from tkinter import ttk, font, filedialog, Entry
-from tkinter.messagebox import askokcancel, showinfo, WARNING
-import getpass
-from PIL import ImageTk, Image
+from PIL import Image
 import csv
-import pyautogui
 import tkcap
-import img2pdf
 import numpy as np
-import time
 import pydicom as dicom
 from abc import ABC,abstractmethod
 from datetime import datetime
@@ -56,6 +49,6 @@ class GenerateReport():
         csvSave.save_results(selfpadre,root,reportID,text1,label,proba)        
         csvSave = Report(PDF())
         csvSave.save_results(selfpadre,root,reportID,text1,label,proba)
-        showinfo(title="PDF", message="El PDF y el CSV fueron generados con éxito.")
+        
             
 

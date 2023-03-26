@@ -10,3 +10,4 @@ pydicom
 img2pdf
 numpy
 opencv_python
+tensorflow

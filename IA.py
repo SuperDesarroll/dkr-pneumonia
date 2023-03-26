@@ -1,17 +1,6 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
-from tkinter import *
-from tkinter import ttk, font, filedialog, Entry
-from tkinter.messagebox import askokcancel, showinfo, WARNING
 import getpass
-from PIL import ImageTk, Image
-import csv
-import pyautogui
-import tkcap
-import img2pdf
+from PIL import Image
 import numpy as np
-import time
 import pydicom as dicom
 import tensorflow as tf
 from tensorflow.keras import backend as K
