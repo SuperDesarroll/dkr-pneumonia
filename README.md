@@ -58,3 +58,5 @@ ALGUNAS VISTAS:
 
 **HeatMap**
 ![Heatmap](https://raw.githubusercontent.com/SuperDesarroll/dkr_pneumonia/main/Pantallas/Api01.jpeg?token=GHSAT0AAAAAAB5QOPAJEE73AEZLK773M5CGZBAXNNQ "Heatmap")
+
+El heatmap se puede visualizar online en este https://codebeautify.org/base64-to-image-converter
