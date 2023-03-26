@@ -13,6 +13,9 @@ ENV PYTHONUNBUFFERED=1
 COPY requirements.txt .
 RUN python -m pip install -r requirements.txt
 
+RUN apt-get update -y && \
+    apt-get install python3-opencv -y 
+
 WORKDIR /app
 COPY . /app
 
