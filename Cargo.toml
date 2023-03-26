@@ -1,0 +1,9 @@
+[package]
+name = "hyper-test"
+version = "0.0.2"
+authors = ["Geoffroy Couprie <geo.couprie@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+hyper = { version = "0.14", features = ["full"] }
+tokio = { version = "1", features = ["full"] }
