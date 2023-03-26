@@ -1,12 +1,24 @@
-FROM python:3.8-slim
+FROM python:3.8
 
-WORKDIR /app/
-ADD requirements.txt /app/
+WORKDIR /app
 
+RUN apt-get -y update  && apt-get install -y \
+  python3-dev \
+  apt-utils \
+  python-dev \
+  build-essential \
+&& rm -rf /var/lib/apt/lists/*
+
+RUN pip install --upgrade setuptools
+RUN pip install \
+    cython==0.29.24 \
+    numpy==1.21.1 \
+    pandas==1.3.1 \
+    pystan==2.19.1.1
+
+COPY requirements.txt .
 RUN pip install -r requirements.txt
 
-ADD . /app/
+COPY . .
 
-EXPOSE 8005
-
-CMD ["hypercorn", "main:app", "-b", "0.0.0.0:8080", "--reload"]
+CMD gunicorn -w 3 -k uvicorn.workers.UvicornWorker main:app --bind 0.0.0.0:$PORT
