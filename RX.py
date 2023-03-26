@@ -28,9 +28,8 @@ class JPGPNG(RX):
         img2show = Image.fromarray(img_array)
         img2 = img_array.astype(float)
         img2 = (np.maximum(img2, 0) / img2.max()) * 255.0
-        img2 = np.uint8(img2)
-        img_RGB = cv2.cvtColor(img2, cv2.COLOR_GRAY2RGB)
-        return img_RGB, img2show
+        img2 = np.uint8(img2)        
+        return img2, img2show
 
 class RXRead():
     def __init__(self,c:RX):
