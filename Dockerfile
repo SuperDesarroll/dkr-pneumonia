@@ -1,7 +1,5 @@
-FROM python:3.7
-ENV PYTHONUNBUFFERED=1
-COPY . .
-WORKDIR /app
-RUN pip3 install --upgrade pip
-RUN pip3 install -r requirements.txt
-EXPOSE 8000
+FROM python:3.8
+COPY . /usr/src/app
+WORKDIR /usr/src/app
+RUN python3 -m pip install -r requirements.txt
+CMD ["uvicorn","main:app","--host","0.0.0.0","--port","80"]
