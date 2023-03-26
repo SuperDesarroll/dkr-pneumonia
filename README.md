@@ -9,7 +9,6 @@ Proyectos de Inteligenciar Artificial
 Aplicando Ingeniería de Software
 
 # main.py
-
 Inicio del la api
 Se debe consumir el método process_image
 cargando el archivo desde el swagger o enviando por parámetro 
@@ -19,6 +18,7 @@ Retorna:
 label = (Viral, Normal o Bacteria)
 proba = de 1 - 100 porcentaje de probabilidad de predicción
 heatmap = base64 imagen mapa de calor
+
 
 1. La aplicación inicia con el archivo detectorOOP.py
 
@@ -50,12 +50,11 @@ Implementaciones
 
 ALGUNAS VISTAS:
 
+**Swagger Metodo POST Procesar Imagen:**
+![Respuesta](https://raw.githubusercontent.com/SuperDesarroll/dkr_pneumonia/main/Pantallas/Api03.jpeg?token=GHSAT0AAAAAAB5QOPAIICW2D7SOWMRILYESZBAXONQ "Respuesta")
 
-[![Aplicación](https://raw.githubusercontent.com/SuperDesarroll/detector_neumonia/main/reportes/01.jpeg?token=GHSAT0AAAAAAB5QOPAJSGBY6KGSBQKEBIIQZA42QMA "Aplicación")](https://raw.githubusercontent.com/SuperDesarroll/detector_neumonia/main/reportes/01.jpeg?token=GHSAT0AAAAAAB5QOPAJSGBY6KGSBQKEBIIQZA42QMA "Aplicación")
+**Respuesta Label, Probabilidad y HeatMap**
+![Respuestas](https://raw.githubusercontent.com/SuperDesarroll/dkr_pneumonia/main/Pantallas/Api02.jpeg?token=GHSAT0AAAAAAB5QOPAIQNHJVLWWR5OGKOB6ZBAXPXA "Respuestas")
 
-Pruebas Unitarias:
-
-![Pruebas Unitarias](https://raw.githubusercontent.com/SuperDesarroll/detector_neumonia/main/reportes/02.jpeg?token=GHSAT0AAAAAAB5QOPAJCCRVCJ2N2MWU272AZA42RJA "Pruebas Unitarias")
-
-![Pruebas Unitarias](https://raw.githubusercontent.com/SuperDesarroll/detector_neumonia/main/reportes/03.jpeg?token=GHSAT0AAAAAAB5QOPAIWUB6BW6AAUYHIXM2ZA42RYQ "Pruebas Unitarias")
-
+**HeatMap**
+![Heatmap](https://raw.githubusercontent.com/SuperDesarroll/dkr_pneumonia/main/Pantallas/Api01.jpeg?token=GHSAT0AAAAAAB5QOPAJEE73AEZLK773M5CGZBAXNNQ "Heatmap")
