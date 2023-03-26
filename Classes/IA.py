@@ -1,3 +1,16 @@
+# Estudiante: Dewins Murillo García
+# Universidad Autónoma de Occidente
+# Postgrado Inteligencia Artificial
+# Entrega Preliminar:
+# Proyectos de Inteligenciar Artificial 
+# Aplicando Ingeniería de Software
+
+# IA.py (abstract)
+# Esta clase se encarga de cargar el modelo que se encuentra en la carpeta Models
+# tambièn tiene la funcion de generar un heatmap o mapa de calor como retorno.
+# Al final de la predicción y de acuerdo al index resultado, este retorna
+# un label del diágnostico.
+
 import getpass
 from PIL import Image
 import numpy as np
@@ -10,7 +23,7 @@ import cv2
 
 class IA():
     def model_fun(self):
-        model_cnn = tf.keras.models.load_model("WilhemNet_86.h5")
+        model_cnn = tf.keras.models.load_model("Models/WilhemNet_86.h5")
         return model_cnn
     
     def preprocess(self,array):

@@ -1,16 +1,28 @@
+# Estudiante: Dewins Murillo García
+# Universidad Autónoma de Occidente
+# Postgrado Inteligencia Artificial
+# Entrega Preliminar:
+# Proyectos de Inteligenciar Artificial 
+# Aplicando Ingeniería de Software
+
+# ApoOOP.py
+# Clase inicial de la api
+# Esta clase se encarga de preprocesar el archivo dependiendo de su extensión
+# instanciando RX con sus distintos métodos abstractos.
+# Al finalizar crea una imagen del mapa de calor y los transforma a base64
+
 from PIL import Image
 from io import BytesIO
 import cv2
 import numpy as np
-import IA as ia
-import RX as rx
+import Classes.IA as ia
+import Classes.RX as rx
 import pydicom as dicom
 import base64
 from io import BytesIO
 
 class ApiOOP():
-
-
+    
     async def process_image(self,file):    
         file_location = f"files/{file.filename}"
         with open(file_location, "wb+") as file_object:
