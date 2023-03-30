@@ -20,7 +20,7 @@ Retorna:
 - heatmap = base64 imagen mapa de calor
 
 
-1. La aplicación inicia con el archivo ApiOOP.py
+1. La aplicación inicia con el archivo main.py que su vez instancia el un objeto de la clase ApiOOP.py
 
 > El archivo WilhemNet_86.h5 se encuentra en el zip que nos enviaron junto con el enlace del repositorio.
 
