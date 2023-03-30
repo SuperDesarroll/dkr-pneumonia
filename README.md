@@ -5,7 +5,7 @@ Docker python tensorflow pneumonía
 Universidad Autónoma de Occidente
 Postgrado Inteligencia Artificial
 Entrega Preliminar:
-Proyectos de Inteligenciar Artificial 
+Proyectos de Inteligencia Artificial 
 Aplicando Ingeniería de Software
 
 # main.py
@@ -15,12 +15,12 @@ cargando el archivo desde el swagger o enviando por parámetro
 el objetoc archivo.
 
 Retorna:
-label = (Viral, Normal o Bacteria)
-proba = de 1 - 100 porcentaje de probabilidad de predicción
-heatmap = base64 imagen mapa de calor
+- label = (Viral, Normal o Bacteria)
+- proba = de 1 - 100 porcentaje de probabilidad de predicción
+- heatmap = base64 imagen mapa de calor
 
 
-1. La aplicación inicia con el archivo detectorOOP.py
+1. La aplicación inicia con el archivo ApiOOP.py
 
 > El archivo WilhemNet_86.h5 se encuentra en el zip que nos enviaron junto con el enlace del repositorio.
 
