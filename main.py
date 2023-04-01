@@ -6,7 +6,7 @@
 # Aplicando Ingeniería de Software
 
 # main.py
-# Inicio del la api
+# Inicio del api
 # Se debe consumir el método process_image
 # cargando el archivo desde el swagger o enviando por parámetro 
 # el objetoc archivo.
@@ -18,7 +18,7 @@
 from starlette.responses import RedirectResponse
 from fastapi import FastAPI, UploadFile
 from fastapi.encoders import jsonable_encoder
-import Classes.ApiOOP as apiOOP #importamos la clase inicial ApiOOP
+import src.apibag as apibag #importamos la clase inicial ApiBag
 
 app = FastAPI() 
 
@@ -28,6 +28,6 @@ def read_root():
 
 @app.post("/process_image/")
 async def process_image(file: UploadFile):
-    apiObj = apiOOP.ApiOOP() #declaramos el objeto Api OOP
+    apiObj = apibag.ApiBag() #declaramos el objeto Api OOP
     label, proba, heatmap=await apiObj.process_image(file) #procesamos la imagen   
     return {"filename": file.filename,"label":label,"proba":proba,"heatmap":heatmap}
