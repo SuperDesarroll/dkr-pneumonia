@@ -4,7 +4,7 @@ Docker python tensorflow pneumonía
 # Estudiante: Dewins Murillo García
 Universidad Autónoma de Occidente
 Postgrado Inteligencia Artificial
-Entrega Preliminar:
+Entrega Final:
 Proyectos de Inteligencia Artificial 
 Aplicando Ingeniería de Software
 
@@ -46,7 +46,7 @@ Implementaciones
 
 3. Se Implementa Pruebas unitarias de las clases IA y RX
 
-> El archivo test_with_unittest.py contiene las 2 pruebas unitarias
+> La carpeta tests contiene las 2 pruebas unitarias
 
 ALGUNAS VISTAS:
 
