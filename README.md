@@ -24,9 +24,9 @@ Retorna:
 
 > El archivo WilhemNet_86.h5 se encuentra en el zip que nos enviaron junto con el enlace del repositorio.
 
-2. Las pruebas unitarias inician con el comando: 
+2. Las pruebas unitarias inician con el siguiente comando ubicado en la raiz del proyecto: 
 
->`python -m unittest discover`
+>`pytest`
 
 Implementaciones
 
