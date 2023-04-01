@@ -51,7 +51,7 @@ Implementaciones
 ALGUNAS VISTAS:
 
 **Swagger Metodo POST Procesar Imagen:**
-![Respuesta]([https://raw.githubusercontent.com/SuperDesarroll/dkr_pneumonia/main/Pantallas/Api03.jpeg?token=GHSAT0AAAAAAB5QOPAIICW2D7SOWMRILYESZBAXONQ](https://raw.githubusercontent.com/SuperDesarroll/dkr_pneumonia/main/screens/Api03.jpeg) "Respuesta")
+![Respuesta](https://raw.githubusercontent.com/SuperDesarroll/dkr_pneumonia/main/screens/Api03.jpeg "Respuesta")
 
 **Respuesta Label, Probabilidad y HeatMap**
 ![Respuestas](https://raw.githubusercontent.com/SuperDesarroll/dkr_pneumonia/main/screens/Api02.jpeg "Respuestas")
