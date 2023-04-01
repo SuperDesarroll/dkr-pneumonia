@@ -64,7 +64,9 @@ El heatmap se puede visualizar online en este https://codebeautify.org/base64-to
 Pruebas Unitarias
 
 **Comando pytest**
+
 ![comandopytest](https://raw.githubusercontent.com/SuperDesarroll/dkr_pneumonia/main/screens/App04.jpeg "Comando pytest")
 
 **Comando pytest resultado**
+
 ![comandopytestresultado](https://raw.githubusercontent.com/SuperDesarroll/dkr_pneumonia/main/screens/App05.jpeg "Comando pytest resultado")
