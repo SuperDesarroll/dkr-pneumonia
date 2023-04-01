@@ -5,7 +5,7 @@ Docker python tensorflow pneumonía
 Universidad Autónoma de Occidente
 Postgrado Inteligencia Artificial
 Entrega Preliminar:
-Proyectos de Inteligenciar Artificial 
+Proyectos de Inteligencia Artificial 
 Aplicando Ingeniería de Software
 
 # main.py
@@ -15,18 +15,18 @@ cargando el archivo desde el swagger o enviando por parámetro
 el objetoc archivo.
 
 Retorna:
-label = (Viral, Normal o Bacteria)
-proba = de 1 - 100 porcentaje de probabilidad de predicción
-heatmap = base64 imagen mapa de calor
+- label = (Viral, Normal o Bacteria)
+- proba = de 1 - 100 porcentaje de probabilidad de predicción
+- heatmap = base64 imagen mapa de calor
 
 
-1. La aplicación inicia con el archivo detectorOOP.py
+1. La aplicación inicia con el archivo main.py que su vez instancia el un objeto de la clase ApiOOP.py
 
 > El archivo WilhemNet_86.h5 se encuentra en el zip que nos enviaron junto con el enlace del repositorio.
 
-2. Las pruebas unitarias inician con el comando: 
+2. Las pruebas unitarias inician con el siguiente comando ubicado en la raiz del proyecto: 
 
->`python -m unittest discover`
+>`pytest`
 
 Implementaciones
 
@@ -51,12 +51,22 @@ Implementaciones
 ALGUNAS VISTAS:
 
 **Swagger Metodo POST Procesar Imagen:**
-![Respuesta](https://raw.githubusercontent.com/SuperDesarroll/dkr_pneumonia/main/Pantallas/Api03.jpeg?token=GHSAT0AAAAAAB5QOPAIICW2D7SOWMRILYESZBAXONQ "Respuesta")
+![Respuesta](https://raw.githubusercontent.com/SuperDesarroll/dkr_pneumonia/main/screens/Api03.jpeg "Respuesta")
 
 **Respuesta Label, Probabilidad y HeatMap**
-![Respuestas](https://raw.githubusercontent.com/SuperDesarroll/dkr_pneumonia/main/Pantallas/Api02.jpeg?token=GHSAT0AAAAAAB5QOPAIQNHJVLWWR5OGKOB6ZBAXPXA "Respuestas")
+![Respuestas](https://raw.githubusercontent.com/SuperDesarroll/dkr_pneumonia/main/screens/Api02.jpeg "Respuestas")
 
 **HeatMap**
-![Heatmap](https://raw.githubusercontent.com/SuperDesarroll/dkr_pneumonia/main/Pantallas/Api01.jpeg?token=GHSAT0AAAAAAB5QOPAJEE73AEZLK773M5CGZBAXNNQ "Heatmap")
+![Heatmap](https://raw.githubusercontent.com/SuperDesarroll/dkr_pneumonia/main/screens/Api01.jpeg "Heatmap")
 
 El heatmap se puede visualizar online en este https://codebeautify.org/base64-to-image-converter
+
+Pruebas Unitarias
+
+**Comando pytest**
+
+![comandopytest](https://raw.githubusercontent.com/SuperDesarroll/dkr_pneumonia/main/screens/App04.jpeg "Comando pytest")
+
+**Comando pytest resultado**
+
+![comandopytestresultado](https://raw.githubusercontent.com/SuperDesarroll/dkr_pneumonia/main/screens/App05.jpeg "Comando pytest resultado")
