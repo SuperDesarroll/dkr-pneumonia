@@ -51,12 +51,12 @@ Implementaciones
 ALGUNAS VISTAS:
 
 **Swagger Metodo POST Procesar Imagen:**
-![Respuesta](https://raw.githubusercontent.com/SuperDesarroll/dkr_pneumonia/main/Pantallas/Api03.jpeg?token=GHSAT0AAAAAAB5QOPAIICW2D7SOWMRILYESZBAXONQ "Respuesta")
+![Respuesta]([https://raw.githubusercontent.com/SuperDesarroll/dkr_pneumonia/main/Pantallas/Api03.jpeg?token=GHSAT0AAAAAAB5QOPAIICW2D7SOWMRILYESZBAXONQ](https://raw.githubusercontent.com/SuperDesarroll/dkr_pneumonia/main/screens/Api03.jpeg) "Respuesta")
 
 **Respuesta Label, Probabilidad y HeatMap**
-![Respuestas](https://raw.githubusercontent.com/SuperDesarroll/dkr_pneumonia/main/Pantallas/Api02.jpeg?token=GHSAT0AAAAAAB5QOPAIQNHJVLWWR5OGKOB6ZBAXPXA "Respuestas")
+![Respuestas](https://raw.githubusercontent.com/SuperDesarroll/dkr_pneumonia/main/screens/Api02.jpeg "Respuestas")
 
 **HeatMap**
-![Heatmap](https://raw.githubusercontent.com/SuperDesarroll/dkr_pneumonia/main/Pantallas/Api01.jpeg?token=GHSAT0AAAAAAB5QOPAJEE73AEZLK773M5CGZBAXNNQ "Heatmap")
+![Heatmap](https://raw.githubusercontent.com/SuperDesarroll/dkr_pneumonia/main/screens/Api01.jpeg "Heatmap")
 
 El heatmap se puede visualizar online en este https://codebeautify.org/base64-to-image-converter
