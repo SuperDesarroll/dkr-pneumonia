@@ -24,7 +24,7 @@ from neumoniadetection import NemoniaDetection
 def test_predict():
     dcm=JPGPNG()
     rxLoad = RXRead(dcm)
-    array, img2show = rxLoad.read_file("../files/JPG/virus/person1501_virus_2611.jpeg")        
+    array, img2show = rxLoad.read_file("files/JPG/virus/person1501_virus_2611.jpeg")        
     deepIA = NemoniaDetection()
     label, proba, heatmap = deepIA.predict(array)        
     print(proba)
