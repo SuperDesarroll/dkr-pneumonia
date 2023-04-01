@@ -5,7 +5,7 @@
 # Proyectos de Inteligenciar Artificial 
 # Aplicando Ingeniería de Software
 
-# test_neumonia_detection.py
+# test_images_conversion.py
 # Esta clase tiene distintas pruebas unitarias
 # que se ejecutaran utilizando el comando siguiente:
 # python -m unittest discover
@@ -18,18 +18,19 @@
 
 #python -m unittest discover
 
-from unittest import TestCase
-from neumoniadetection import NemoniaDetection
-from imagesconversion import JPGPNG
-from imagesconversion import RXRead
+from imagesconversion import JPGPNG, RXRead
 
-class TestNeumoniaDetection(TestCase):
 
-    def test_predict(self):
-        dcm=JPGPNG()
-        rxLoad = RXRead(dcm)
-        array, img2show = rxLoad.read_file("../files/JPG/virus/person1501_virus_2611.jpeg")        
-        deepIA = NemoniaDetection()
-        label, proba, heatmap = deepIA.predict(array)        
-        print(proba)
-        assert (float(proba) > 50)
+def func(x):
+    return x + 1
+
+
+def test_answer():
+    assert func(4) == 5
+
+
+def test_cargue_jpg():        
+    dcm=JPGPNG()
+    rxLoad = RXRead(dcm)
+    array, img2show = rxLoad.read_file("files/JPG/virus/person1501_virus_2611.jpeg")        
+    assert (array.shape == (640, 1024, 3))
