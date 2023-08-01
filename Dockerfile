@@ -22,8 +22,12 @@ WORKDIR /app
 COPY . /app
 
 WORKDIR /app/models
+COPY . /app/models
+
+
 #RUN zip -s 40m -r WilhemNet_86.zip WilhemNet_86.h5
 #RUN split -b 40m  WilhemNet_86.h5 segment
+RUN echo "SE DEBE UNIR LOS ARCHIVOS"
 RUN cat segment* > WilhemNet_86.h5
 RUN ls
 
