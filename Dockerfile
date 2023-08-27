@@ -1,5 +1,5 @@
 # For more information, please refer to https://aka.ms/vscode-docker-python
-FROM python:3.10-slim
+FROM python:3.11-slim
 
 EXPOSE 8000
 
@@ -8,6 +8,12 @@ ENV PYTHONDONTWRITEBYTECODE=1
 
 # Turns off buffering for easier container logging
 ENV PYTHONUNBUFFERED=1
+
+# Install system dependencies
+RUN apt-get update && \
+    apt-get install -y libjpeg-dev zlib1g-dev libpng-dev libtiff-dev libopenjp2-7-dev libfreetype6-dev liblcms2-dev libwebp-dev tcl-dev tk-dev libharfbuzz-dev libfribidi-dev libxcb1-dev
+
+RUN pip install --upgrade pip
 
 # Install pip requirements
 COPY ./docker/requirements.txt .

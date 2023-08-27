@@ -4,7 +4,7 @@ uvicorn[standard]==0.20.0
 gunicorn==20.1.0
 
 pyautogui
-pillow==8.3.2
+pillow==9.0.0
 tkcap
 pydicom
 img2pdf
