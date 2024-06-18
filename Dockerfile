@@ -11,18 +11,21 @@ ENV PYTHONUNBUFFERED=1
 
 # Install system dependencies
 RUN apt-get update && \
-    apt-get install -y libjpeg-dev zlib1g-dev libpng-dev libtiff-dev libopenjp2-7-dev libfreetype6-dev liblcms2-dev libwebp-dev tcl-dev tk-dev libharfbuzz-dev libfribidi-dev libxcb1-dev
+    apt-get install -y libjpeg-dev zlib1g-dev libpng-dev libtiff-dev libopenjp2-7-dev libfreetype6-dev liblcms2-dev libwebp-dev tcl-dev tk-dev libharfbuzz-dev libfribidi-dev libxcb1-dev libhdf5-dev
 
 RUN pip install --upgrade pip
 
 # Install pip requirements
 COPY ./docker/requirements.txt .
-RUN python -m pip install -r requirements.txt
 
 RUN apt-get update -y \    
-    && apt-get install python3-opencv -y \
-    && apt-get install unzip \
-    && apt-get install zip
+    && apt-get install python3-opencv -y \        
+    && apt-get install unzip -y \
+    && apt-get install zip -y 
+
+RUN pip install h5py
+
+RUN python -m pip install -r requirements.txt
 
 WORKDIR /app
 COPY . /app
